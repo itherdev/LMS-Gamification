@@ -1,6 +1,6 @@
 <?php 
 // die("1");
-$debug_mode = 1;
+$debug_mode = 0;
 
 
 $id_room_subjects = $_GET['id_room_subjects'];

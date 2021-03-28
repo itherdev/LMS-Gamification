@@ -1,6 +1,6 @@
 <?php
 session_start();
-$debug_mode = 1;
+$debug_mode = 0;
 $is_login = 0;
 $admin_level = 0;
 $id_room = 0;
@@ -67,14 +67,17 @@ if (isset($_SESSION['id_room'])) $id_room = $_SESSION['id_room'];
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css'>
+
 
 
 
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="dingo.js"></script>
-  <!-- <link href="dingo.css" rel="stylesheet"> -->
+  <script src="brainy.js"></script>
+  <link href="brainy.css" rel="stylesheet">
 
 </head>
 
@@ -138,6 +141,9 @@ if (isset($_SESSION['id_room'])) $id_room = $_SESSION['id_room'];
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

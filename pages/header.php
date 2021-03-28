@@ -34,8 +34,6 @@
                   <li><a href="#" id="link__info_challenges" class="link_header">Challenge</a></li>
                   <li><a href="#" id="link__info_uts" class="link_header">UTS</a></li>
                   <li><a href="#" id="link__info_uas" class="link_header">UAS</a></li>
-                  <li><a href="#" id="link__info_absen_online" class="link_header">Presensi Online</a></li>
-                  <li><a href="#" id="link__info_nilai_akhir" class="link_header">Nilai Akhir</a></li>
                 </ul>
               </li>
               <li class="drop-down"><a href="#">Rooms</a>
