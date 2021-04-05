@@ -9,16 +9,11 @@
 						<div class="col-md-10 offset-1">
 							<div class="card-block">
 								<div class="row">
-									<div class="col-sm-4 py-sm-0">
-										<div class="col-md-3  user-profile">
-											<div class="card-block text-center text-white">
-												<div class="m-b-10"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
-											</div>
-										</div>
+									<div class="col-sm-3 py-sm-5">
+										<div class="mb-10"><img src="assets/img/avatar1.png" alt="" style="width: 50%;"></div>
 									</div>
-									<div class="col-sm-8">
-										<br> <br>
-										<h4 class="f-w-600"><?= $nickname ?></h4>
+									<div class="col-sm-9 py-sm-5">
+										<h3 class="f-w-600"><?= $nickname ?></h3>
 										<p><?= $nama_badge ?></p>
 									</div>
 								</div>
@@ -27,19 +22,9 @@
 									<div class="col-sm-6">
 										<p class="m-b-10 f-w-600">Progress For Precense Today</p>
 										<div class="row">
-											<div class="col-sm-6">
-												<!-- Progress bar 1 -->
-												<div class="progress mx-auto" data-value='80%'>
-													<span class="progress-left">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<span class="progress-right">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="width: 20%">
-														<div class="h4 font-weight-bold">0<sup class="small">%</sup></div>
-													</div>
-												</div>
+											<div class="col-sm-5">
+												<img src="assets/img/progress/15.png" alt="" style=" width: 75%;">
+
 											</div>
 											<div class="col-sm-6">
 												<h6>Login</h6>
@@ -53,40 +38,19 @@
 										<p class="m-b-10 f-w-600">Your Statistics</p>
 										<div class="row">
 											<div class="col-sm-4">
-												<!-- Progress bar 1 -->
-												<div class="progress mx-auto" data-value='80%'>
-													<span class="progress-left">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<span class="progress-right">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="width: 20%">
-														<div class="h4 font-weight-bold">0<sup class="small">%</sup></div>
-													</div>
-												</div>
+												<img src="assets/img/progress/25.png" alt="" style=" width: 75%;">
+
 											</div>
-											<div class="col-sm-8">
-												<br>
+											<div class="col-sm-8 align-content-center">
 												<h6>Teknik Informatika</h6>
 												<h6><?= $nama_room ?></h6>
 											</div>
 										</div>
 										<br>
-										<div class="row">
+										<div class=" row">
 											<div class="col-sm-4">
-												<!-- Progress bar 1 -->
-												<div class="progress mx-auto" data-value='80%'>
-													<span class="progress-left">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<span class="progress-right">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="width: 20%">
-														<div class="h4 font-weight-bold">0<sup class="small">%</sup></div>
-													</div>
-												</div>
+												<img src="assets/img/progress/88.png" alt="" style=" width: 75%;">
+
 											</div>
 
 											<div class="col-sm-8">
@@ -103,25 +67,15 @@
 										<p class="m-b-10 f-w-600">Challenges</p>
 										<div class="row">
 											<div class="col-sm-12">
-												<h6>Ongoing</h6>
-												<h6>Followed</h6>
+												<h6><strong>0</strong> Ongoing</h6>
+												<h6><strong>0</strong> Followed</h6>
 											</div>
 										</div>
 										<br>
 										<div class="row">
-											<div class="col-sm-6">
-												<!-- Progress bar 1 -->
-												<div class="progress mx-auto" data-value='80%'>
-													<span class="progress-left">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<span class="progress-right">
-														<span class="progress-bar border-primary"></span>
-													</span>
-													<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="width: 20%">
-														<div class="h4 font-weight-bold">0<sup class="small">%</sup></div>
-													</div>
-												</div>
+											<div class="col-sm-3">
+												<img src="assets/img/progress/15.png" alt="" style=" width: 70%;">
+
 											</div>
 											<div class="col-sm-6">
 												<br>
@@ -134,12 +88,12 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<h6>Your Ranking is <?= $player_rank ?><sup><?= $player_rank_cap ?></sup></span> of <?= $jumlah_player ?> player</h6>
-												<h6>Your Point <?= $my_point ?></h6>
+												<h6>Your Point <strong><?= $my_point ?></strong></h6>
 											</div>
 										</div>
 									</div>
 								</div>
-								<ul class="social-link list-unstyled m-t-40 m-b-10">
+								<ul class="social-link list-unstyled m-t-40 m-b-3">
 									<li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
 									<li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
 									<li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i class="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>

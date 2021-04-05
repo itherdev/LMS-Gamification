@@ -5,10 +5,10 @@ if ($_SERVER['SERVER_NAME'] == "localhost") $online_version = 0;
 
 if ($online_version) {
 	$db_server = "localhost";
-	$db_user = "pmbikmiac_admin_akademik";
-	$db_pass = "pmbikmicirebon2020";
-	$db_name = "pmbikmiac_akademik";
-}else{
+	$db_user = "";
+	$db_pass = "";
+	$db_name = "";
+} else {
 	$db_server = "localhost";
 	$db_user = "root";
 	$db_pass = "";
@@ -16,10 +16,9 @@ if ($online_version) {
 }
 
 $cn = new mysqli($db_server, $db_user, $db_pass, $db_name);
-if ($cn -> connect_errno) {
-  echo "Error Config# Failed to connect to MySQL";
-  exit();
+if ($cn->connect_errno) {
+	echo "Error Config# Failed to connect to MySQL";
+	exit();
 }
 
 date_default_timezone_set("Asia/Jakarta");
-?>

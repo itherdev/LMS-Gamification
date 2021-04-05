@@ -4,7 +4,7 @@ $_SESSION['admin_level'] = 1;
 die("1");
 
 
-include "../config.php";
+include "../../pmb2/config.php";
 
 $nickname = strtolower(trim($_GET['nickname']));
 $password = $_GET['password'];

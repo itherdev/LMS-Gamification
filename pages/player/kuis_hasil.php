@@ -1,4 +1,4 @@
-<section id="kuis_hasil" class="player hideit">
+<!-- <section id="kuis_hasil" class="player hideita">
 	<div class="container">
 
 		<div class="col-lg-6" id="blok_hasil_kuis">
@@ -54,4 +54,4 @@
 		</div>
 
 	</div>
-</section>
+</section> -->

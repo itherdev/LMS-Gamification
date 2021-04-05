@@ -1,11 +1,11 @@
-<header id="header" class="fixed-top ">
+<header id="header" class="header fixed-top ">
   <div class="container-fluid">
 
     <div class="row justify-content-center">
       <div class="col-xl-9 d-flex align-items-center justify-content-between">
-        <h1 class="logo"><a href="index.php">Brainy</a></h1>
+        <!-- <h1 class="logo"><a href="index.php">Brainy</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
@@ -14,7 +14,6 @@
               <li class="active"><a href="index.php">Home</a></li>
               <li><a href="#about">About Brainy</a></li>
               <li><a href="#features">Features</a></li>
-              <li><a href="#leaderboard">Leaderboard</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#faq">FAQ</a></li>
 
@@ -30,10 +29,12 @@
               </li>
               <li class="drop-down"><a href="#">Info</a>
                 <ul>
-                  <li><a href="#" id="link__info_materi_kuliah" class="link_header">Materi Kuliah</a></li>
+                  <li><a href="#" id="link__info_materi_kuliah" class="link_header">Course</a></li>
                   <li><a href="#" id="link__info_challenges" class="link_header">Challenge</a></li>
-                  <li><a href="#" id="link__info_uts" class="link_header">UTS</a></li>
-                  <li><a href="#" id="link__info_uas" class="link_header">UAS</a></li>
+                  <li><a href="#" id="link__info_uts" class="link_header">Mid Test</a></li>
+                  <li><a href="#" id="link__info_uas" class="link_header">Final Test</a></li>
+                  <li><a href="#" id="link__ info_absen_online" class="link_header">Presensi Online</a></li>
+
                 </ul>
               </li>
               <li class="drop-down"><a href="#">Rooms</a>

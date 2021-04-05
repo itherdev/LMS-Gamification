@@ -5,7 +5,7 @@ $id_soal = $_GET['id_soal'];
 $nickname = $_GET['nickname']; //cari siapa yg mengakses soal
 $id_playedby = "$id_soal"."_by_$nickname";
 
-include "../config.php";
+include "../../pmb2/config.php";
 
 // INSERT TB_PLAYED BY AGAR DIUPDATE SAAT PLAYER SUBMIT JAWABAN
 $s = "INSERT into tb_soal_playedby (id_playedby, nickname, id_soal) values (

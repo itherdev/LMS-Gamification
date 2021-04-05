@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (isset($id_room)) {
 
 	# ================================================
@@ -29,13 +29,13 @@ if (isset($id_room)) {
 	where b.id_room = '$id_room'";
 	$q = mysqli_query($cn, $s) or die("Error room_var2 Can't get data room");
 
-	if (mysqli_num_rows($q)>0) {
+	if (mysqli_num_rows($q) > 0) {
 		while ($d2 = mysqli_fetch_array($q)) {
 			$nama_subjects = $d2['nama_subjects'];
 			$id_room_subjects = $d2['id_room_subjects'];
 			$nama_subjects_options .= "<option value='$id_room_subjects'>$nama_subjects</option>";
 		}
-	}else{
+	} else {
 		$s = "INSERT INTO tb_room_subjects (id_room,nama_subjects) values ($id_room,'MATERI UMUM $nama_room')";
 		$q = mysqli_query($cn, $s) or die("Error room_var3 Insert new room subjects");
 
@@ -70,27 +70,27 @@ if (isset($id_room)) {
 	ORDER BY a.room_player_point DESC
 	";
 
-	$q = mysqli_query($cn,$s) or die("Error #room_var1 Can't get room data");
+	$q = mysqli_query($cn, $s) or die("Error #room_var1 Can't get room data");
 	$jumlah_player = mysqli_num_rows($q);
-	
+
 	while ($d = mysqli_fetch_array($q)) {
 		$player_rank++;
-		if (strtoupper($d['nickname'])==strtoupper($nickname)) break;
+		if (strtoupper($d['nickname']) == strtoupper($nickname)) break;
 	}
 
 	$i = 0;
-	$q = mysqli_query($cn,$s) or die("Error #room_var2 Can't get room data");
+	$q = mysqli_query($cn, $s) or die("Error #room_var2 Can't get room data");
 	while ($d = mysqli_fetch_array($q)) {
 		$i++;
 		$list_player[$i] = $d['nama_player'];
 		$list_point[$i] = $d['room_player_point'];
-		if ($i==10) break;
+		if ($i == 10) break;
 	}
 
 	$player_rank_cap = "th";
-	if($player_rank % 10 == 1) $player_rank_cap = "st";
-	if($player_rank % 10 == 2) $player_rank_cap = "nd";
-	if($player_rank % 10 == 3) $player_rank_cap = "rd";
+	if ($player_rank % 10 == 1) $player_rank_cap = "st";
+	if ($player_rank % 10 == 2) $player_rank_cap = "nd";
+	if ($player_rank % 10 == 3) $player_rank_cap = "rd";
 
 
 
@@ -114,13 +114,13 @@ if (isset($id_room)) {
 
 	";
 	// die($s);
-	$q = mysqli_query($cn,$s) or die("Error room_var5 Get unplayed_questions");
+	$q = mysqli_query($cn, $s) or die("Error room_var5 Get unplayed_questions");
 	$unplayed_questions = mysqli_num_rows($q);
 
-	
+
 	$list_unplayed_questions = "";
 	while ($d = mysqli_fetch_array($q)) {
-		$list_unplayed_questions.= $d['id_soal'].",";
+		$list_unplayed_questions .= $d['id_soal'] . ",";
 	}
 	// $list_unplayed_questions.= "_";
 	// $list_unplayed_questions = str_replace(",_", "", $list_unplayed_questions);
@@ -138,7 +138,7 @@ if (isset($id_room)) {
 	# ================================================
 	# JUMLAH QUESTIONS
 	# ================================================
-	$q = mysqli_query($cn,"
+	$q = mysqli_query($cn, "
 		SELECT id_soal from tb_soal where soal_creator = '$nickname' and verified >= 0
 		") or die("Error #room_var6");
 	$jumlah_questions = mysqli_num_rows($q);
@@ -149,12 +149,12 @@ if (isset($id_room)) {
 	# ================================================
 	# NEW ID SOAL
 	# ================================================
-	$new_id_soal = strtolower($nickname)."_".date("ymdHis");
+	$new_id_soal = strtolower($nickname) . "_" . date("ymdHis");
 
-	?>
+?>
 
-	<input type="hidden" id="id_room" value="<?=$id_room?>">
-	<input type="hidden" id="jumlah_questions" value="<?=$jumlah_questions?>">
-	<input type="text" id="new_id_soal" value="<?=$new_id_soal?>">
+	<input type="hidden" id="id_room" value="<?= $id_room ?>">
+	<input type="hidden" id="jumlah_questions" value="<?= $jumlah_questions ?>">
+	<input type="hidden" id="new_id_soal" value="<?= $new_id_soal ?>">
 
 <?php } ?>

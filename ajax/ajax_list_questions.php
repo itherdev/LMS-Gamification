@@ -1,4 +1,4 @@
-<?php
+<?php 
 $debug_mode = 0;
 
 $nickname = $_GET['nickname'];
@@ -6,18 +6,18 @@ $nickname = $_GET['nickname'];
 include "../config.php";
 
 
-$q = mysqli_query($cn, "
+$q = mysqli_query($cn,"
 	SELECT * from tb_soal where soal_creator = '$nickname' and verified >= 0
 	") or die("Error #ajax daftar pertanyaan.");
 
-$o = "";
-$i = 0;
-while ($d = mysqli_fetch_assoc($q)) {
+$o="";
+$i=0;
+while ($d=mysqli_fetch_assoc($q)) {
 	$i++;
 	$id_soal = $d['id_soal'];
 	$tipe_soal = $d['tipe_soal'];
 	$kalimat_soal = $d['kalimat_soal'];
-
+	
 	$jawaban_pg = $d['jawaban_pg'];
 	$jawaban_tf = $d['jawaban_tf'];
 	$jawaban_isian = $d['jawaban_isian'];
@@ -46,29 +46,16 @@ while ($d = mysqli_fetch_assoc($q)) {
 	$jawaban_pg_salah2 = $opsi_pg3;
 	$jawaban_pg_salah3 = $opsi_pg4;
 	$jawaban_pg_salah4 = $opsi_pg5;
-
-	if ($tipe_soal == 1) {
+	
+	if ($tipe_soal==1) {
 		$tipe_soal_cap = "PG";
 
 		switch ($jawaban_pg) {
-			case "A":
-				break;
-			case "B":
-				$jawaban_pg_benar = $opsi_pg2;
-				$jawaban_pg_salah1 = $opsi_pg1;
-				break;
-			case "C":
-				$jawaban_pg_benar = $opsi_pg3;
-				$jawaban_pg_salah2 = $opsi_pg1;
-				break;
-			case "D":
-				$jawaban_pg_benar = $opsi_pg4;
-				$jawaban_pg_salah3 = $opsi_pg1;
-				break;
-			case "E":
-				$jawaban_pg_benar = $opsi_pg5;
-				$jawaban_pg_salah4 = $opsi_pg1;
-				break;
+			case "A": break;
+			case "B": $jawaban_pg_benar = $opsi_pg2;$jawaban_pg_salah1 = $opsi_pg1; break;
+			case "C": $jawaban_pg_benar = $opsi_pg3;$jawaban_pg_salah2 = $opsi_pg1; break;
+			case "D": $jawaban_pg_benar = $opsi_pg4;$jawaban_pg_salah3 = $opsi_pg1; break;
+			case "E": $jawaban_pg_benar = $opsi_pg5;$jawaban_pg_salah4 = $opsi_pg1; break;
 		}
 
 		$opsi_jawaban = "
@@ -83,29 +70,26 @@ while ($d = mysqli_fetch_assoc($q)) {
 		";
 	}
 
-	if ($tipe_soal == 2) {
+	if ($tipe_soal==2) {
 		$tipe_soal_cap = "T/F";
-		if ($jawaban_tf == 1) {
-			$jawaban_tf_cap = "True";
-		} else {
-			$jawaban_tf_cap = "False";
-		}
+		if ($jawaban_tf==1) {	$jawaban_tf_cap = "True";
+		}else{$jawaban_tf_cap = "False";}
 		$opsi_jawaban = "Jawaban : $jawaban_tf_cap";
 	}
 
-	if ($tipe_soal == 3) {
+	if ($tipe_soal==3) {
 		$tipe_soal_cap = "Isian";
 		$opsi_jawaban = "Jawaban singkat: $jawaban_isian";
 	}
 
-	$key = md5("__" . $id_soal);
+	$key = md5("__".$id_soal);
 
-	$o .= "
+	$o.= "
 	<div class='row table-bordered'>
 		<div class='divisi col-md-12' style='padding: 15px'>
 			<small>Tipe: $tipe_soal_cap</small>
 			<p>
-				<a href='soal_detail.php?nickname=$nickname&key=$key' target='_blank' style='color: #002394'>$i. $kalimat_soal</a>
+				<a href='soal_detail.php?nickname=$nickname&key=$key' target='_blank' style='color:#ffa'>$i. $kalimat_soal</a>
 			</p>
 			<p style='padding-left: 20px'>
 				$opsi_jawaban

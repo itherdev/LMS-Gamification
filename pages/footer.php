@@ -1,5 +1,5 @@
 <footer id="footer">
-  <div class="container-fluid">
+  <div class="container-fluid text-center ">
     <h4>Brainy Gamification Learning</h4>
     <p>Make Learning as fun as Playing !</p>
     <div class="social-links">
