@@ -1,12 +1,28 @@
 <?php
-// die("1");
+// die("1");  
 $debug_mode = 0;
+
+if(!isset($_GET['nickname'])) die("ajax_var#1 belum terdefinisi");
+if(!isset($_GET['id_soal'])) die("ajax_var#2 belum terdefinisi");
+if(!isset($_GET['id_room'])) die("ajax_var#3 belum terdefinisi");
+if(!isset($_GET['jawaban_terpilih'])) die("ajax_var#4 belum terdefinisi");
+if(!isset($_GET['sisa_waktu'])) die("ajax_var#5 belum terdefinisi");
+if(!isset($_GET['rows_point'])) die("ajax_var#6 belum terdefinisi");
+
 
 $nickname = $_GET['nickname'];
 $id_soal = $_GET['id_soal'];
+$id_room = $_GET['id_room'];
 $jawaban_terpilih = $_GET['jawaban_terpilih'];
 $sisa_waktu = $_GET['sisa_waktu'];
 $rows_point = $_GET['rows_point'];
+
+if($nickname=="") die("ajax_var#1 tidak boleh kosong");
+if($id_soal=="") die("ajax_var#2 tidak boleh kosong");
+if($id_room=="") die("ajax_var#3 tidak boleh kosong");
+if($jawaban_terpilih=="") die("ajax_var#4 tidak boleh kosong");
+if($sisa_waktu=="") die("ajax_var#5 tidak boleh kosong");
+if($rows_point=="") die("ajax_var#6 tidak boleh kosong");
 
 $a = explode("_", $id_soal);
 $nickname_creator = $a[0];
@@ -30,7 +46,7 @@ $rows_point_multiplier = 4;
 
 
 
-include "../../pmb2/config.php";
+include "../config.php";
 # =====================================================
 # GET DATA SOAL OF CREATOR AND CREATOR DATA
 # =====================================================
@@ -43,21 +59,24 @@ d.room_player_point,
 e.id_playedby,  
 f.room_active_point 
 
-from tb_soal a 
-join tb_room_subjects b on a.id_room_subjects=b.id_room_subjects 
-join tb_player c on a.soal_creator=c.nickname 
-join tb_room_points d on c.nickname=d.nickname  
-join tb_soal_playedby e on e.id_soal=a.id_soal 
-join tb_room f on f.id_room=b.id_room 
-where a.id_soal='$id_soal'";
+from tbqw_soal a 
+join tbqw_room_subjects b on a.id_room_subjects=b.id_room_subjects 
+join tbqw_player c on a.soal_creator=c.nickname 
+join tbqw_room_players d on c.nickname=d.nickname  
+join tbqw_soal_playedby e on e.id_soal=a.id_soal 
+join tbqw_room f on f.id_room=b.id_room 
+where a.id_soal='$id_soal' 
+and d.id_room='$id_room'";
 // die($s);
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban SQL: $s");}
 else{$q = mysqli_query($cn,$s) or die("0");}
+if(mysqli_num_rows($q)<=0) die("SQL Query sukses tetapi tanpa rows data.");
 $d = mysqli_fetch_array($q);
 
 $id_room = $d['id_room'];
 $soal_creator = $d['soal_creator'];
 $tipe_soal = $d['tipe_soal'];
+if($tipe_soal=="") die("Tipe soal pada database tidak boleh kosong");
 $level_soal = $d['level_soal'];
 
 $jawaban_pg = $d['jawaban_pg'];
@@ -88,8 +107,8 @@ a.last_play,
 a.my_point,
 b.room_player_point 
 
-from tb_player a 
-join tb_room_points b on a.nickname=b.nickname  
+from tbqw_player a 
+join tbqw_room_players b on a.nickname=b.nickname  
 where a.nickname='$nickname' and b.id_room = '$id_room'";
 // die($s);
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::get data player; SQL: $s");}
@@ -138,6 +157,8 @@ switch ($tipe_soal) {
 	$basic_point_jawab_salah=$basic_point_jawab_salah_isian;
 	break;
 
+	default: die("Tidak ada nilai default untuk tipe_soal: $tipe_soal");
+
 }
 
 if($dijawab_benar){
@@ -152,6 +173,7 @@ if($dijawab_benar){
 	# =====================================================
 	# 1. BASIC POINT
 	$basic_point = $basic_point_jawab_salah;
+	if($jawaban_terpilih=="-") $basic_point = 0;
 	$point_creator = $point_creator_jawab_salah;
 
 	# =====================================================
@@ -242,7 +264,7 @@ $new_room_player_point_creator = $room_player_point_creator + $creator_point;
 
 # =====================================================
 # 1. UPDATE PLAYER:
-$s = "UPDATE tb_player set 
+$s = "UPDATE tbqw_player set 
 play_count = '$play_count',
 last_play = CURRENT_TIMESTAMP,
 my_point = '$new_my_point' 
@@ -252,7 +274,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #1");}
 
 # =====================================================
 # 2. UPDATE CREATOR:
-$s = "UPDATE tb_player set 
+$s = "UPDATE tbqw_player set 
 my_point = '$new_my_point_creator' 
 where nickname = '$nickname_creator'";
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #2; SQL: $s");}
@@ -260,7 +282,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #2");}
 
 # =====================================================
 # 3. DATA SOAL
-$s = "UPDATE tb_soal set 
+$s = "UPDATE tbqw_soal set 
 benar_count = '$benar_count', 
 salah_count = '$salah_count', 
 earned_point = '$new_earned_point', 
@@ -271,7 +293,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #3");}
 
 # =====================================================
 # 4. DATA SOAL PLAYEDBY
-$s = "UPDATE tb_soal_playedby set 
+$s = "UPDATE tbqw_soal_playedby set 
 dijawab_benar = '$dijawab_benar', 
 durasi_jawab = '$durasi_jawab', 
 player_point = '$player_point', 
@@ -282,7 +304,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #4");}
 
 # =====================================================
 # 5. DATA ROOM
-$s = "UPDATE tb_room set 
+$s = "UPDATE tbqw_room set 
 room_active_point = '$new_room_active_point' 
 where id_room = '$id_room'";
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #5; SQL: $s");}
@@ -290,7 +312,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #5");}
 
 # =====================================================
 # 6. DATA ROOM POINT >> PLAYER
-$s = "UPDATE tb_room_points set 
+$s = "UPDATE tbqw_room_players set 
 room_player_point = '$new_room_player_point' 
 where nickname = '$nickname' and id_room='$id_room'";
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #6; SQL: $s");}
@@ -298,7 +320,7 @@ else{$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #6");}
 
 # =====================================================
 # 7. DATA ROOM POINT >> CREATOR
-$s = "UPDATE tb_room_points set 
+$s = "UPDATE tbqw_room_players set 
 room_player_point = '$new_room_player_point_creator' 
 where nickname = '$nickname_creator' and id_room='$id_room'";
 if($debug_mode){$q = mysqli_query($cn,$s) or die("Error #ajax submit jawaban::update #7; SQL: $s");}
@@ -329,6 +351,7 @@ if($debug_mode) echo "1string
 ";
 
 echo "
+1,
 $dijawab_benar,
 $jawaban_db,
 $player_point,
@@ -337,5 +360,3 @@ $rows_point,
 $new_room_player_point,
 $new_my_point
 ";
-
-?>

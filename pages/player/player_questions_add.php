@@ -239,105 +239,120 @@ if ($debug_mode) {
 	<div class="container">
 		<div class="row container">
 			<div class="col-12 col-md-12 col-lg-12">
-				<div class="card py-5 px-5">
-					<h3 class="card-title">My Questions </h3>
-					<h5><?= $nama_room ?></h5>
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" class="btn btn-primary btn-sm link_header float-right" id="btn_back_to__player_questions">Back to My Questions</button>
+				<div class="card card-hero">
+					<div class="card-header py-5">
+						<div class="card-icon ">
+							<i class="far fa-question-circle"></i>
 						</div>
-						<div class="form-group">
-							<label style="color: #002394">Sub-Chapter Material</label>
-							<select class="form-control " id="id_room_subjects">
-								<?= $nama_subjects_options ?>
-							</select>
-						</div>
+						<h4 class="pt-5">Add Questions </h4>
+						<div class="card-description px-3 pb-5"><strong><?= $nama_room ?></strong></div>
+						<hr>
+						</>
+						<div class="card-body">
 
-						<div class="form-group">
-							<label style="color: #002394">Type of Question</label>
-							<select class="form-control" id="tipe_soal" onchange="return confirm('Mengubah Tipe Soal akan membuat Form kembali kosong. Anda Yakin??')">
-								<option value="1">Multiple Choice</option>
-								<option value="2">True/False</option>
-								<option value="3">Short Answer</option>
-							</select>
-						</div>
+							<div class="form-group">
+								<label>Sub-Chapter Material</label>
+								<select class="form-control " id="id_room_subjects">
+									<?= $nama_subjects_options ?>
+								</select>
+							</div>
 
-						<div class="form-group">
-							<label>Time to Answer</label><br>
-							<select class="input-sm" id="durasi_jawab_by_user">
-								<?php for ($i = 0; $i <= 12; $i++) {
-									$j = $i * 5;
-									echo "<option>$j</option>";
-								} ?>
-							</select> second + <span id="durasi_jawab_by_length">32</span> second =
-							<span id="durasi_jawab">64</span> second
-						</div>
+							<div class="form-group py-2">
+								<label>Type of Question</label>
+								<select class="form-control" id="tipe_soal" onchange="return confirm('Mengubah Tipe Soal akan membuat Form kembali kosong. Anda Yakin??')">
+									<option value="1">Multiple Choice</option>
+									<option value="2">True/False</option>
+									<option value="3">Short Answer</option>
+								</select>
+							</div>
 
-						<div class="form-group">
-							<label style="color:#002394">Sentence Questions</label>
-							<textarea class="form-control input_qadd" rows="5" id="kalimat_soal" required style="color: #002394"><?= $kalimat_soal ?></textarea>
-							<small id="ket_kalimat_soal" style="color: red; display: none "><b>Perhatian !!</b> Submit soal asal-asalan hanya akan memberikan point negatif. <br>Point tambahan/point negatif akan ditambahkan setelah diverifikasi oleh dosen.</small>
-						</div>
+							<div class="form-group py-2">
+								<label>Time to Answer</label><br>
+								<select class="input-sm" id="durasi_jawab_by_user">
+									<?php for ($i = 0; $i <= 12; $i++) {
+										$j = $i * 5;
+										echo "<option>$j</option>";
+									} ?>
+								</select> second + <span id="durasi_jawab_by_length">32</span> second =
+								<span id="durasi_jawab">64</span> second
+							</div>
 
-
-						<div class="form-group hideit opsi_tf">
-							<label style="color: #002394">True / False Answers</label>
-							<select class="form-control" id="jawaban_tf">
-								<option value="1" style="color: green">True</option>
-								<option value="0" style="color: red">False</option>
-							</select>
-						</div>
-
-						<div class="form-group  hideit opsi_isian">
-							<label style="color: #002394">Short Answer</label>
-							<input type="text" class="form-control" id="jawaban_isian" required style="color: #002394" value="<?= $jawaban_isian ?>">
-							<small>Try only 1 word and no spaces or special characters.</small>
-						</div>
+							<div class="form-group py-2">
+								<label>Sentence Questions</label>
+								<textarea class="form-control input_qadd" rows="5" id="kalimat_soal" required><?= $kalimat_soal ?></textarea>
+								<small id="ket_kalimat_soal" style="color: red; display: none "><b>Perhatian !!</b> Submit soal asal-asalan hanya akan memberikan point negatif. <br>Point tambahan/point negatif akan ditambahkan setelah diverifikasi oleh dosen.</small>
+							</div>
 
 
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group opsi_benar opsi_pg">
-									<label style="color: #002394">Correct answer</label>
-									<input type="text" class="form-control input_qadd" id="jawaban_pg_benar" required style="color: #002394;font-weight: bold" value="<?= $jawaban_pg_benar ?>">
-									<small id="ket_jawaban_pg_benar" style="color: blue; display: none ">
-										<b> Attention !! </b> Questions and answers must be correct.
-										<br> If the answer is negative or the answer is double it will give a negative point.
-										<br> The correct answer must be accompanied by 4 wrong answers.
-									</small>
+							<div class="form-group hideit opsi_tf">
+								<label>True / False Answers</label>
+								<select class="form-control" id="jawaban_tf">
+									<option value="1" style="color: green">True</option>
+									<option value="0" style="color: red">False</option>
+								</select>
+							</div>
+
+							<div class="form-group  hideit opsi_isian">
+								<label>Short Answer</label>
+								<input type="text" class="form-control" id="jawaban_isian" required value="<?= $jawaban_isian ?>">
+								<small>Try only 1 word and no spaces or special characters.</small>
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group opsi_benar opsi_pg py-2">
+										<label>Correct answer</label>
+										<input type="text" class="form-control input_qadd" id="jawaban_pg_benar" required style="color: #002394;font-weight: bold" value="<?= $jawaban_pg_benar ?>">
+										<small id="ket_jawaban_pg_benar" style="color: blue; display: none ">
+											<b> Attention !! </b> Questions and answers must be correct.
+											<br> If the answer is negative or the answer is double it will give a negative point.
+											<br> The correct answer must be accompanied by 4 wrong answers.
+										</small>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group opsi_salah opsi_pg py-1">
+										<label>Wrong Option</label>
+										<input type="text" class="form-control input_qadd" name="jawaban_pg_salah1" id="jawaban_pg_salah1" required value="<?= $jawaban_pg_salah1 ?>">
+									</div>
+
+									<div class="form-group opsi_salah opsi_pg py-1">
+										<input type="text" class="form-control input_qadd" name="jawaban_pg_salah2" id="jawaban_pg_salah2" required value="<?= $jawaban_pg_salah2 ?>">
+									</div>
+
+									<div class="form-group opsi_salah opsi_pg py-1">
+										<input type="text" class="form-control input_qadd" name="jawaban_pg_salah3" id="jawaban_pg_salah3" required value="<?= $jawaban_pg_salah3 ?>">
+									</div>
+
+									<div class="form-group opsi_salah opsi_pg py-1">
+										<input type="text" class="form-control input_qadd" name="jawaban_pg_salah4" id="jawaban_pg_salah4" required value="<?= $jawaban_pg_salah4 ?>">
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group opsi_salah opsi_pg">
-									<label style="color: #002394">Wrong Option</label>
-									<input type="text" class="form-control input_qadd" name="jawaban_pg_salah1" id="jawaban_pg_salah1" required value="<?= $jawaban_pg_salah1 ?>">
-								</div>
 
-								<div class="form-group opsi_salah opsi_pg">
-									<input type="text" class="form-control input_qadd" name="jawaban_pg_salah2" id="jawaban_pg_salah2" required value="<?= $jawaban_pg_salah2 ?>">
+							<div class="form-group">
+								<label>Pictorial Question Media (Optional)</label>
+								<input type="file" class="form-control" name="media_soal" id="media_soal">
+							</div>
+							<div class="row">
+								<div class="col-md-9">
+									<div class="form-group py-2">
+										<button class="btn btn-primary btn-block tombol" id="btn_simpan_soal">Save Question</button>
+										<p style="color: red;font-weight: bold" id="pesan_error"></p>
+									</div>
 								</div>
-
-								<div class="form-group opsi_salah opsi_pg">
-									<input type="text" class="form-control input_qadd" name="jawaban_pg_salah3" id="jawaban_pg_salah3" required value="<?= $jawaban_pg_salah3 ?>">
-								</div>
-
-								<div class="form-group opsi_salah opsi_pg">
-									<input type="text" class="form-control input_qadd" name="jawaban_pg_salah4" id="jawaban_pg_salah4" required value="<?= $jawaban_pg_salah4 ?>">
+								<div class="col-md-3">
+									<div class="form-group py-2">
+										<button type="button" class="btn btn-dark btn-sm link_header float-right" id="btn_back_to__player_questions">Back to My Questions</button>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="form-group">
-							<label style="color: #002394">Pictorial Question Media (Optional)</label>
-							<input type="file" class="form-control" name="media_soal" id="media_soal">
-						</div>
-						<div class="form-group">
-							<button class="btn btn-primary btn-block tombol" id="btn_simpan_soal">Save Question</button>
-							<p style="color: red;font-weight: bold" id="pesan_error"></p>
-						</div>
 
+
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 </section>

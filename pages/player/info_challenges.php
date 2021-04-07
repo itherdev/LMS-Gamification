@@ -32,75 +32,75 @@
 
 <section id="info_challenges" class="player hideit">
 	<div class="container">
+		<div class="card px-5 py-5 ">
 
-		<h3>Challenge Lists</h3>
-		<hr>
 
-		<table width="100%" id="table_chal_filter">
-			<tr>
-				<td>
+			<h3>Challenge Lists</h3>
+			<hr>
+
+			<div class="row" id="table_chal_filter">
+				<div class="col-md-10">
 					Status: <select style="padding: 2px 5px">
 						<option value="9">--All--</option>
 						<option value="0">Unbeaten</option>
 						<option value="1">Beaten</option>
 					</select>
-				</td>
-				<td align="right">
-					<button>Refresh</button>
-				</td>
-			</tr>
-		</table>
-
-
-		<div class="" id="">
-
-			<div id="chal_rows"></div>
-
-			<small id="chal_rows_found"></small>
-			<div class="row" style="margin-top: 10px">
-				<div class="col-lg-4">
-					<table width="100%">
-						<tr>
-							<td width="30%">
-								<table width="100%">
-									<tr>
-										<td width="50%" style="padding: 0 0 0 0">
-											<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__first">
-												<<< /button>
-										</td>
-										<td width="50%" style="padding: 0 0 0 2px">
-											<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__prev">
-												<< /button>
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td width="40%" style="padding: 0 15px">
-								<select id="chal_page" class="form-control	chal_filter" style="padding-left: 2px">
-									<?php
-									for ($i = 1; $i <= $jumlah_page; $i++) {
-										echo "<option value='$i'>Page $i</option>";
-									} ?>
-								</select>
-							</td>
-							<td width="30%">
-								<table width="100%">
-									<tr>
-										<td width="50%" style="padding: 0 2px 0 0">
-											<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__next">></button>
-										</td>
-										<td width="50%" style="padding: 0 0 0 0">
-											<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__last">>></button>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-info" id="btn_refresh_list_question">Refresh List</button>
 				</div>
 			</div>
-		</div>
 
+
+			<div class="" id="">
+
+				<div id="chal_rows" class="py-3"></div>
+
+				<small id="chal_rows_found"></small>
+				<!-- <div class="row" style="margin-top: 10px">
+					<div class="col-lg-4">
+						<table width="100%">
+							<tr>
+								<td width="30%">
+									<table width="100%">
+										<tr>
+											<td width="50%" style="padding: 0 0 0 0">
+												<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__first">
+												</button>
+											</td>
+											<td width="50%" style="padding: 0 0 0 2px">
+												<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__prev">
+												</button>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td width="40%" style="padding: 0 15px">
+									<select id="chal_page" class="form-control	chal_filter" style="padding-left: 2px">
+										<?php
+										for ($i = 1; $i <= $jumlah_page; $i++) {
+											echo "<option value='$i'>Page $i</option>";
+										} ?>
+									</select>
+								</td>
+								<td width="30%">
+									<table width="100%">
+										<tr>
+											<td width="50%" style="padding: 0 2px 0 0">
+												<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__next">></button>
+											</td>
+											<td width="50%" style="padding: 0 0 0 0">
+												<button class="btn btn-primary btn-block chal_filter btn_nav" id="chal_btn_nav__last">>></button>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div> -->
+			</div>
+		</div>
 	</div>
 </section>
 

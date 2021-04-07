@@ -1,10 +1,10 @@
 <?php
-$_SESSION['nickname'] = "ubaid";
-$_SESSION['admin_level'] = 1;
-die("1");
+// $_SESSION['nickname'] = "ubaid";
+// $_SESSION['admin_level'] = 1;
+// die("1");
 
 
-include "../../pmb2/config.php";
+include "../config.php";
 
 $nickname = strtolower(trim($_GET['nickname']));
 $password = $_GET['password'];

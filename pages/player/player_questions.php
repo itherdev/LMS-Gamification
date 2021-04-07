@@ -27,31 +27,43 @@
 <section id="player_questions" class="player hideit">
 	<div class="container">
 		<div class="row container ">
-			<div class="ol-12 col-md-12 col-lg-12">
-				<div class="card py-5 px-3">
-					<div class="card-body">
-						<h3 class="card-title">My Questions </h3>
-						<h5><?= $nama_room ?></h5>
-						<h5 class="card-subtitle mb-2 text-muted"><small><span id="jumlah_questions"><?= $jumlah_questions ?></span> Questions</small></h5>
-						<br>
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="card card-hero">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="far fa-question-circle"></i>
+						</div>
+						<h4>My Questions </h4>
+						<div class="card-description px-3"><strong><?= $nama_room ?></strong>
+							<div class="badge badge-success"><span id="jumlah_questions"><?= $jumlah_questions ?></span> Questions</div>
+						</div>
 						<div class="row">
 							<div class="col-md-12 py-3">
-								<button type="button" class="btn btn-light btn-sm" id="btn_refresh_list_question">Refresh List</button>
-								<button type="button" class="btn btn-primary link_header  float-right " id="btnpq__player_questions_add">Add Question</button>
-							</div>
-							<div class="col-md-12">
-								<div id="list_questions">
 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 py-3">
+							<div class="row">
+								<div class="col-md-9">
+
+								</div>
+								<div class="col-md-3">
+									<button type="button" class="badge badge-info" id="btn_refresh_list_question">Refresh List</button>
+									<button type="button" class="badge badge-primary link_header  float-right " id="btnpq__player_questions_add">Add Question</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-md-12">
+						<div class="card-body px-5" id="list_questions">
+						</div>
+					</div>
+
 				</div>
+
+
+
 			</div>
-
-		</div>
-
-
-
-	</div>
 </section>

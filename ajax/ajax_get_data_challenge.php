@@ -1,4 +1,4 @@
-<?php 
+<?php
 $debug_mode = 0;
 
 $id_room = $_GET['id_room'];
@@ -73,7 +73,7 @@ include "../config.php";
 
 // $i = ($chal_page-1)*$jml_data_pp;
 $s = "SELECT * FROM tb_challenge where id_room = $id_room and chal_creator != '$nickname'";
-$q = mysqli_query($cn,$s) or die("Error @ajax get data challenges");
+$q = mysqli_query($cn, $s) or die("Error @ajax get data challenges");
 
 $x = "
 <table width='100%' class='table-hover table-bordered' id='chal_list'>
@@ -81,8 +81,10 @@ $x = "
 		<th>NO</th>
 		<th>CHALLENGES</th>
 	</thead>
+	
+
 ";
-$i=0;
+$i = 0;
 while ($d = mysqli_fetch_assoc($q)) {
 	$i++;
 	$id_chal = $d['id_chal'];
@@ -91,11 +93,11 @@ while ($d = mysqli_fetch_assoc($q)) {
 	$chal_created = $d['chal_created'];
 	$chal_desc = $d['chal_desc'];
 	$chal_point = $d['chal_point'];
-	if($chal_desc!="") $chal_desc.= "<br>";
+	if ($chal_desc != "") $chal_desc .= "<br>";
 
 	$key = md5("__$id_chal");
 
-	$x.= "
+	$x .= "
 	<tr>
 		<td class='tdcenter'>$i</td>
 		<td class=''>
@@ -109,7 +111,6 @@ while ($d = mysqli_fetch_assoc($q)) {
 		</td>
 	</tr>
 	";
-
 }
 // $debug = "
 // jumlah_chal:$jumlah_chal jml_data_pp:$jml_data_pp jumlah_page:$jumlah_page

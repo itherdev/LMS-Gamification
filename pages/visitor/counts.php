@@ -1,8 +1,8 @@
 <section id="counts" class="visitor counts">
   <div class="container">
 
-    <div class="text-center title pb-5">
-      <h3>Our achieved so far</h3>
+    <div class="section-title">
+      <h2>Our achieved so far</h2>
       <p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>
     </div>
 

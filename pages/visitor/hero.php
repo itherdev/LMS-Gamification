@@ -8,7 +8,7 @@
           <h1 class="pt-5 my-3">Brainy - Digital Learning with <span>Gamifications </span></h1>
           <h2>Make learning as fun as playing !</h2>
           <div class="text-lg-start pb-5">
-            <a href="#about" class="btn-get-started scrollto ">Get Started</a>
+            <a id="linkhd__login" href="#" class="btn-get-started scrollto ">Play Game</a>
           </div>
         </div>
       </div>

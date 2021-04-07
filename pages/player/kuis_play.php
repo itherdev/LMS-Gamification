@@ -65,7 +65,7 @@ $tipe_soal
 		padding: 5px 8px 5px 8px;
 	}
 </style>
-<section id="kuis_play" class="player hideita">
+<section id="kuis_play" class="player hideit">
 	<div class="container">
 
 		<div class="row ">
@@ -126,9 +126,9 @@ $tipe_soal
 									<p style="color: black;">Reject IT</p>
 								</div>
 							</div>
-							<img id='img_play_kuis' src='assets/img/answer_or_reject.png' height='150px' style='margin: 15px'>
+
 						</div>
-						<button id="btn_ready_play" class="btn-primary btn-block tombol col-md-8 offset-2" <?= $disabled_ready_play ?>>Ready Play!</button>
+						<button id="btn_ready_play" class="btn-primary btn-block tombol col-md-12 " <?= $disabled_ready_play ?>>Ready Play!</button>
 						<hr>
 
 
@@ -137,7 +137,8 @@ $tipe_soal
 						<!-- TIDAK ADA SOAL  -->
 						<!-- =================================================== -->
 						<small id="btn_ready_play_ket" class="<?= $btn_ready_play_ket_hide_style ?>">
-							Wow sorry,<span style="color: yellom; font-weight: bold">there are no questions that you can play.</span>. Tell your friends to make questions or you can <a href="#" id="link_qplay__player_questions_add" class="link_header">make questions</a> for your friends!
+							Wow sorry,<span style="color: yellom; font-weight: bold">there are no questions that you can play.</span>. <br>
+							Tell your friends to make questions or you can <a href="#" id="link_qplay__player_questions_add" class="link_header">make questions</a> for your friends!
 						</small>
 
 

@@ -86,9 +86,9 @@
 }
 
 .divisi{
-  background: linear-gradient(rgba(0, 25, 0, 0.4), rgba(0, 25, 0, 0.5));
-  border: solid 1px #bbb;
-  padding: 3px;
+  /* background: #f00; */
+  /* border: solid 1px #bbb; */
+  padding: 30px;
 }
 
 /*.player a:hover{
