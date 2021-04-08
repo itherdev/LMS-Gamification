@@ -84,6 +84,140 @@
         </div>
       </div>
 
+      <!-- <div class="card">
+      <div class="section-body">
+        <h2 class="section-title">Courses</h2>
+        <p class="section-lead">
+          Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+        </p>
+
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <article class="article article-style-c">
+              <div class="article-header">
+                <div class="article-image" data-background="../assets/img/news/img14.jpg">
+                </div>
+              </div>
+              <div class="article-details">
+
+                <div class="article-title">
+                  <h2><a href="{{ route('course1')}}">TI6KUR2018 - SECURE PROGRAMMING</a></h2>
+                </div>
+
+                <div class="article-user">
+                  <img alt="image" src="../assets/img/avatar/avatar-3.png">
+                  <div class="article-user-details">
+                    <div class="user-detail-name">
+                      <a href="#">Iin, Sholihin, M.Kom</a>
+                    </div>
+                    <div class="text-job">NIP. 4111111111111</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <article class="article article-style-c">
+              <div class="article-header">
+                <div class="article-image" data-background="../assets/img/news/img13.jpg">
+                </div>
+              </div>
+              <div class="article-details">
+                <div class="article-title">
+                  <h2><a href="#">TI6KUR2018 - ORACLE PL/SQL</a></h2>
+                </div>
+                <div class="article-user">
+                  <img alt="image" src="../assets/img/avatar/avatar-1.png">
+                  <div class="article-user-details">
+                    <div class="user-detail-name">
+                      <a href="#">Ade, Irma Purnamasari M.Kom</a>
+                    </div>
+                    <div class="text-job">NIP. 4111111111111</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <article class="article article-style-c">
+              <div class="article-header">
+                <div class="article-image" data-background="../assets/img/news/img14.jpg">
+                </div>
+              </div>
+              <div class="article-details">
+
+                <div class="article-title">
+                  <h2><a href="#">TI6KUR2018 - PEMROGRAMAN WEB SERVICE</a></h2>
+                </div>
+
+                <div class="article-user">
+                  <img alt="image" src="../assets/img/avatar/avatar-3.png">
+                  <div class="article-user-details">
+                    <div class="user-detail-name">
+                      <a href="#">Andi, Setiawan M.Kom</a>
+                    </div>
+                    <div class="text-job">NIP. 4111111111111</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <article class="article article-style-c">
+              <div class="article-header">
+                <div class="article-image" data-background="../assets/img/news/img01.jpg">
+                </div>
+              </div>
+              <div class="article-details">
+
+                <div class="article-title">
+                  <h2><a href="#">TI6KUR2018 - DEEP LEARNING DASAR</a></h2>
+                </div>
+
+                <div class="article-user">
+                  <img alt="image" src="../assets/img/avatar/avatar-2.png">
+                  <div class="article-user-details">
+                    <div class="user-detail-name">
+                      <a href="#">Gifthera, Dwilestari</a>
+                    </div>
+                    <div class="text-job">NIP. 4111111111111</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <article class="article article-style-c">
+              <div class="article-header">
+                <div class="article-image" data-background="../assets/img/news/img13.jpg">
+                </div>
+              </div>
+              <div class="article-details">
+                <div class="article-title">
+                  <h2><a href="#">TI6KUR2018 - PEMROGRAMAN ANDROID LANJUT
+                    </a></h2>
+                </div>
+                <div class="article-user">
+                  <img alt="image" src="../assets/img/avatar/avatar-1.png">
+                  <div class="article-user-details">
+                    <div class="user-detail-name">
+                      <a href="#">Raditya, Danar Dana</a>
+                    </div>
+                    <div class="text-job">NIP. 4111111111111</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div> -->
 
     </div>
+
+
 </section>

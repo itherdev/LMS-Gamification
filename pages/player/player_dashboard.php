@@ -1,5 +1,6 @@
 <section id="player_dashboard" class="player dashboard ">
 	<div class="container">
+
 		<div class="card px-5 py-5 ">
 			<h2>The Best Player Today !!</h2>
 			<hr>
@@ -8,7 +9,7 @@
 
 				<div class="col-lg-6">
 					<h4 class="py-3">Your Dashboard</h4>
-					<table class="table table-bordered table-hover" style="margin-bottom: 40px">
+					<table class="table table-striped" table-hover" style="margin-bottom: 40px">
 						<thead bgcolor="pink">
 							<th style="text-align: center" colspan=2 height="80px">
 								<a href="?p=pl_ldb"> Your Rank </a> :
@@ -105,6 +106,8 @@
 					</table>
 
 				</div>
+
+
 			</div>
 		</div>
 	</div>

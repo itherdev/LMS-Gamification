@@ -135,11 +135,11 @@
 								<tr>
 									<td>1</td>
 									<td class="aleft">Taufik Hidayat</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -150,11 +150,11 @@
 								<tr>
 									<td>2</td>
 									<td class="aleft">Muhammad sayyid syafiq</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -165,11 +165,11 @@
 								<tr>
 									<td>3</td>
 									<td class="aleft">Istiharoh</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -180,11 +180,11 @@
 								<tr>
 									<td>4</td>
 									<td class="aleft">Bambang Pamungkas</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -195,11 +195,11 @@
 								<tr>
 									<td>5</td>
 									<td class="aleft">Budi</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -210,11 +210,11 @@
 								<tr>
 									<td>6</td>
 									<td class="aleft">Rizky</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -225,11 +225,11 @@
 								<tr>
 									<td>7</td>
 									<td class="aleft">Kamal</td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
-									<td><img src="images/icons/cek.png" px="" height="15"></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
+									<td><i class="fas fa-check-circle"></i></td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>

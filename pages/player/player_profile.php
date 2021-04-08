@@ -27,7 +27,7 @@
 
 											</div>
 											<div class="col-sm-6">
-												<h6>Login</h6>
+												<h6>Login <i class="fas fa-check-circle"></i></h6>
 												<h6>Access Module</h6>
 												<h6>Answer Take Quize</h6>
 												<h6>Make a question</h6>
