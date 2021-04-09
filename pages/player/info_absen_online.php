@@ -137,9 +137,9 @@
 									<td class="aleft">Taufik Hidayat</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -152,9 +152,9 @@
 									<td class="aleft">Muhammad sayyid syafiq</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -167,9 +167,9 @@
 									<td class="aleft">Istiharoh</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -182,9 +182,9 @@
 									<td class="aleft">Bambang Pamungkas</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -197,9 +197,9 @@
 									<td class="aleft">Budi</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -212,9 +212,9 @@
 									<td class="aleft">Rizky</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -227,9 +227,9 @@
 									<td class="aleft">Kamal</td>
 									<td><i class="fas fa-check-circle"></i></td>
 									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
-									<td><i class="fas fa-check-circle"></i></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -241,12 +241,12 @@
 									<td colspan="2" class="aright">Daily login:</td>
 									<td>10</td>
 									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>10</td>
-									<td>-</td>
-									<td>-</td>
-									<td>-</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
 								</tr>
 
 							</tbody>

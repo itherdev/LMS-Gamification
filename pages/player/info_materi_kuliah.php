@@ -1,223 +1,110 @@
 <section id="info_materi_kuliah" class="player hideit">
   <div class="container">
 
-    <style>
-      body {
-        background-color: #F7F7F7
-      }
-    </style>
 
-    <div class="alert alert-light">
-      <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
-      <div class="alert-body">
-        <div class="alert-title">
-          <h3>Learning Materials</h3>
-        </div>
-      </div>
-
-      <div class="col-100 col-md-30 col-lg-30">
-        <div class="card">
+    <div class="row container ">
+      <div class="col-12 col-md-12 col-lg-12">
+        <div class="card card-hero">
           <div class="card-header">
-            <h4><?= $nama_room ?></h4>
-          </div>
-          <div class="card-body p-1">
-            <div class="table-responsive">
-              <table class="table table-striped table-md">
-                <tr>
-                  <th>Number</th>
-                  <th>Material</th>
-                  <th>Upload At</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Input Validation</td>
-                  <td>2021-05-09</td>
-                  <td>
-                    <div class="badge badge-success">Complete</div>
-                  </td>
-                  <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Output Encoding</td>
-                  <td>2021-05-14</td>
-                  <td>
-                    <div class="badge badge-success">Complete</div>
-                  </td>
-                  <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Session Management</td>
-                  <td>2021-05-18</td>
-                  <td>
-                    <div class="badge badge-danger">Not Complete</div>
-                  </td>
-                  <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Data Protection</td>
-                  <td>2021-05-21</td>
-                  <td>
-                    <div class="badge badge-success">Complete</div>
-                  </td>
-                  <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Authentication and Password Management</td>
-                  <td>2021-05-25</td>
-                  <td>
-                    <div class="badge badge-success">Complete</div>
-                  </td>
-                  <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                </tr>
-              </table>
+            <div class="card-icon">
+              <i class="fas fa-book-open"></i>
             </div>
+            <h4>My Learning Path</h4>
+            <div class="card-description px-3">&nbsp; </div>
           </div>
-          </li>
-          </ul>
-          </nav>
+          <div class="row py-5 px-5">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-primary">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 1st learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong> Pengenalan Silabus</span>
+                </div>
+                <div class="card-body">
+                  <p>- Silabus MK <br>
+                    - Aturan Perkuliahan</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-secondary">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 2nd learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong> Konsep Dasar <?= $nama_room ?></span>
+                </div>
+                <div class="card-body">
+                  <p><a href="#">Pengantar <?= $nama_room ?></a><br>
+                    <a href="#" id="link_qplay__player_questions_add" class="link_header">Tugas 1 Buat Soal</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-warning">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 3rd learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong></span>
+                </div>
+                <div class="card-body">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-danger">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 4th learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong></span>
+                </div>
+                <div class="card-body">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-info">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 5th learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong></span>
+                </div>
+                <div class="card-body">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-success">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 6th learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong></span>
+                </div>
+                <div class="card-body">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card card-light">
+                <div class="card bg-primary px-2 py-2">
+                  <h5 style="color:yellow"><strong> 7th learning</strong></h5>
+                  <span style="color: #fff;">
+                    <strong>Title :</strong></span>
+                </div>
+                <div class="card-body">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <!-- <div class="card">
-      <div class="section-body">
-        <h2 class="section-title">Courses</h2>
-        <p class="section-lead">
-          Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
-        </p>
-
-
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-4">
-            <article class="article article-style-c">
-              <div class="article-header">
-                <div class="article-image" data-background="../assets/img/news/img14.jpg">
-                </div>
-              </div>
-              <div class="article-details">
-
-                <div class="article-title">
-                  <h2><a href="{{ route('course1')}}">TI6KUR2018 - SECURE PROGRAMMING</a></h2>
-                </div>
-
-                <div class="article-user">
-                  <img alt="image" src="../assets/img/avatar/avatar-3.png">
-                  <div class="article-user-details">
-                    <div class="user-detail-name">
-                      <a href="#">Iin, Sholihin, M.Kom</a>
-                    </div>
-                    <div class="text-job">NIP. 4111111111111</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <article class="article article-style-c">
-              <div class="article-header">
-                <div class="article-image" data-background="../assets/img/news/img13.jpg">
-                </div>
-              </div>
-              <div class="article-details">
-                <div class="article-title">
-                  <h2><a href="#">TI6KUR2018 - ORACLE PL/SQL</a></h2>
-                </div>
-                <div class="article-user">
-                  <img alt="image" src="../assets/img/avatar/avatar-1.png">
-                  <div class="article-user-details">
-                    <div class="user-detail-name">
-                      <a href="#">Ade, Irma Purnamasari M.Kom</a>
-                    </div>
-                    <div class="text-job">NIP. 4111111111111</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <article class="article article-style-c">
-              <div class="article-header">
-                <div class="article-image" data-background="../assets/img/news/img14.jpg">
-                </div>
-              </div>
-              <div class="article-details">
-
-                <div class="article-title">
-                  <h2><a href="#">TI6KUR2018 - PEMROGRAMAN WEB SERVICE</a></h2>
-                </div>
-
-                <div class="article-user">
-                  <img alt="image" src="../assets/img/avatar/avatar-3.png">
-                  <div class="article-user-details">
-                    <div class="user-detail-name">
-                      <a href="#">Andi, Setiawan M.Kom</a>
-                    </div>
-                    <div class="text-job">NIP. 4111111111111</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <article class="article article-style-c">
-              <div class="article-header">
-                <div class="article-image" data-background="../assets/img/news/img01.jpg">
-                </div>
-              </div>
-              <div class="article-details">
-
-                <div class="article-title">
-                  <h2><a href="#">TI6KUR2018 - DEEP LEARNING DASAR</a></h2>
-                </div>
-
-                <div class="article-user">
-                  <img alt="image" src="../assets/img/avatar/avatar-2.png">
-                  <div class="article-user-details">
-                    <div class="user-detail-name">
-                      <a href="#">Gifthera, Dwilestari</a>
-                    </div>
-                    <div class="text-job">NIP. 4111111111111</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <article class="article article-style-c">
-              <div class="article-header">
-                <div class="article-image" data-background="../assets/img/news/img13.jpg">
-                </div>
-              </div>
-              <div class="article-details">
-                <div class="article-title">
-                  <h2><a href="#">TI6KUR2018 - PEMROGRAMAN ANDROID LANJUT
-                    </a></h2>
-                </div>
-                <div class="article-user">
-                  <img alt="image" src="../assets/img/avatar/avatar-1.png">
-                  <div class="article-user-details">
-                    <div class="user-detail-name">
-                      <a href="#">Raditya, Danar Dana</a>
-                    </div>
-                    <div class="text-job">NIP. 4111111111111</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-
-        </div>
-
-      </div>
-    </div> -->
-
     </div>
 
-
+  </div>
 </section>

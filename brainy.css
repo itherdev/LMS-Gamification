@@ -45,7 +45,7 @@
 }
 
 .gm a {
-  color: #ff0;
+  color: #0046b7;
   font-style: underline;
 }
 
@@ -64,12 +64,12 @@
 }
 
 .dashboard .tddas {
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  color: black;
+  background: #fff;
 }
 
 .dashboard .tddas:hover {
-  color: #ff0;
+  color: #002394;
   background-color: white;
 }
 

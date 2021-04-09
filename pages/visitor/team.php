@@ -13,7 +13,7 @@
                     <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>Taufik Hidayat</h4>
-                        <span>hhhhhhhhhhhhhhhhhhhhh</span>
+                        <span>Frontend Programmer</span>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
@@ -29,7 +29,7 @@
                     <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>Istiharoh</h4>
-                        <span>hhhhhhhhhhhhhhhhhhh</span>
+                        <span>Backend Programmer</span>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
@@ -45,7 +45,7 @@
                     <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>Muhammad Sayyid Syafiq</h4>
-                        <span>hhhhhhhhhhhhhhhhhh</span>
+                        <span>UI/UX Designer</span>
                         <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
